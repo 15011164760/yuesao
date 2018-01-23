@@ -1,0 +1,537 @@
+*{
+	margin:0px;
+	padding:0px;
+	list-style:none;
+	outline:none;
+	border:0px;
+	text-decoration:none;
+	font-family: PingFangSC-Medium;
+}
+body{
+	/*background: #F1F1F1;*/
+}
+.header-top{
+	width:100%;
+	/*height:4rem;*/
+	background:#96E8E3;
+	/*position: fixed;
+	left:0px;
+	top:0px;
+	z-index: 10000;*/
+	height:18.75rem;
+	background: url("../../img/monthmatron/cancelbg.png");
+	background-size: 100% 100%;
+}
+.header-top>div:nth-child(1){
+	width:100%;
+	height:3.6rem;
+	color: #FFF;
+	/*overflow: hidden;*/
+}
+.headerdingwei{
+	position: fixed;
+	top:0;
+	background: #87F0E0;
+}
+.header-top>div:nth-child(1)>span{
+	display:block;
+	float:left;
+	height:4rem;
+	line-height:4rem;
+	font-size: 1.125rem;
+}
+.header-top>div:nth-child(1)>span:nth-child(1){
+	width:20%;
+	padding-top:0px;
+	/*line-height:4rem;*/
+}
+.header-top>div:nth-child(1)>span:nth-child(1) img{
+	display: block;
+	margin-top:1.5rem;
+	margin-bottom:1.125rem;
+	margin-left:0.9375rem;
+    width:1rem;
+}
+.header-top>div:nth-child(1)>span:nth-child(2){
+	width:60%;
+	text-align: center;
+}
+.detailsbtn>span{
+	display: block;
+	float: left;
+	text-align: center;
+	width:50%;
+	height:2rem;
+	line-height: 2rem;
+	margin-top:1.5rem;
+	background: blue;
+}
+.detailsbtn>span:nth-child(1){
+	background: #C6F6EE;
+	border-radius:0.5rem 0 0 0.5rem;
+}
+.detailsbtn>span:nth-child(2){
+	background: #A2F1E4;
+	border-radius:0 0.5rem 0.5rem 0;
+}
+.header-top>ul{
+	/*background: red;*/
+}
+.header-top>ul>li:nth-child(1){
+	margin:0 auto;
+	width:2.9375rem;
+	height:2.0625rem;
+	margin-top: 2rem;
+}
+.header-top>ul>li:nth-child(1)>img{
+	display:block;
+	width:2.9375rem;
+	height:2.8rem;
+	padding-top:3rem;
+}
+.header-top>ul>li:nth-child(2){
+	padding-top:3.825rem;
+	color:#FFFFFF;
+	font-size:1.25rem;
+	text-align: center;
+}
+.header-top>ul>li:nth-child(3){
+	padding-top:0.2rem;
+	color:#FFFFFF;
+	-webkit-text-size-adjust:none;
+	font-size:0.625rem;
+	text-align: center;
+	  -webkit-transform: scale(0.75); 
+}
+.header-top>ul>li:nth-child(4){
+	/*padding-top:0.2rem;*/
+	color:#FFFFFF;
+	font-size:1rem;
+	text-align: center;
+    -webkit-transform: scale(0.625);  
+}
+.cancelcontain{
+	margin: 1rem;
+	box-shadow: #ccc 0 0 0.625rem;
+	height:15.1875rem;
+}
+.cancelcontain>ul>li:nth-child(1)>img{
+	display: block;
+	width:3.4375rem;
+	height:3.6375rem;
+	padding-top:1.5rem;
+	margin:0 auto;
+}
+.cancelcontain>ul>li:nth-child(2){
+	padding-top:.75rem;
+	text-align: center;
+	color:#67DFD8;
+	font-size: 1.125rem;
+}
+.cancelcontain>ul>li:nth-child(3){
+	padding-top:1rem;
+	text-align: center;
+	color:#484848;
+	font-size: .9375rem;
+	padding-left:1.25rem;
+	padding-right:1.25rem;
+}
+/*.cancelcontain>ul>li:nth-child(4)>span{
+	display: block;
+	float: left;
+}
+.cancelcontain>ul>li:nth-child(4)>span:nth-child(1){
+	color:#7CEBD9;
+	margin-left:5.0375rem;
+	margin-top:1.75rem;
+	font-size: .875rem;
+	height:2.1875rem;
+	line-height: 2.1875rem;
+}
+.cancelcontain>ul>li:nth-child(4)>span:nth-child(2){
+	color:#FFF;
+	margin-top:1.75rem;
+	font-size: 1rem;
+	height:2.1875rem;
+	line-height: 2.1875rem;
+	margin-left: 1rem;
+	margin-right: 1rem;
+	width:10rem;
+	border-radius: 1rem;
+}
+.cancelcontain>ul>li:nth-child(4)>span:nth-child(2)>img{
+	display: block;
+	width:10rem;
+	height:100%;
+}*/
+/*新加推荐列表月嫂开始10.25*/
+/*月嫂部分*/
+.yuesaomain{
+	margin-top: .625rem;
+	display: none;
+	overflow: hidden;
+	padding-bottom: 1.2rem;
+	background:#FFF;
+	-webkit-box-shadow: #ccc 0px 0px 0.625rem;
+}
+.yuesaomain>div{
+	padding-top: 1.125rem;
+}
+.yuesaomain>div:nth-child(1){
+   width:30%;
+   height:8.25rem;
+   float:left;
+}
+.yuesaomain>div:nth-child(1)>img{
+   width:7.0625rem;
+   height:7.0625rem;
+   display:block;
+   border-radius: 50%;
+   /*flaot*/
+}
+.yuesaomain>div:nth-child(2){
+   width:70%;
+   height:8.25rem;
+   float:left;
+}
+.yuesaomain>div:nth-child(2)>ul{
+   padding-left: 1rem;
+}
+.yesaoname>span{
+	display: block;
+	float:left;
+}
+.yesaoname>span:nth-child(1){
+	width:1.625rem;
+    height:1.625rem;
+}
+.yesaonames{
+	position: relative;
+}          
+.choosemore{
+	width: 2.625rem;
+    height: 2.625rem;
+    position: absolute;
+    left: -0.5rem;
+    top: -0.5rem;
+    display: none;
+    opacity: 0;
+}
+.yesaonames>img{
+	 display:block;
+	width:1.625rem;
+    height:1.625rem;
+    display: none;
+}
+.yesaoname>span:nth-child(2){
+	margin-left:0.625rem;
+	color:#74CDD7;
+	font-size:1.25rem;
+	letter-spacing: 0.25rem;
+}
+.yesaoname>span:nth-child(3){
+	/*margin-left:0.625rem;*/
+	color:#74CDD7;
+	font-size:1rem;
+	margin-right:0.5rem; 
+	float:right;
+	border: 1px dotted #74CDD7;
+	border-radius: 1.25rem;
+	/*padding:0.1rem 1rem;*/
+}
+.yuesaomain>div:nth-child(2)>ul>li:nth-child(2){
+  clear:both;
+  font-size: 0.9375rem;
+  color:#919292;
+  padding-top: 1rem;
+}
+.yuesaoprice>span{
+  display: block;
+  float: left;
+}
+.yuesaoprice>span:nth-child(1){
+    color:#32B9F7;
+    font-size: 0.9375rem;
+    padding-top:0.2rem;
+}
+.yuesaoprice>span:nth-child(2){
+    color:#32B9F7;
+    font-size: 1.25rem;
+}
+.yuesaoprice>span:nth-child(3){
+    color:#32B9F7;
+    font-size: 2.5rem;
+    font-weight:200;
+}
+.yuesaoprice>span:nth-child(3)>img{
+   height:3rem;
+}
+.yuesaoprice>span:nth-child(4){
+    color:#32B9F7;
+    font-size: 0.75rem;
+    padding-top:1.5rem;
+}
+.yuesaoprice>span:nth-child(5){
+    color:#FFF;
+    width:3rem;
+    height:3rem;
+    border-radius:50%;
+    background: #74CDD7;
+    font-size: 0.875rem;
+    float:right;
+    margin-top:1.28rem;
+    margin-right:1.2rem;
+}
+.yuesaoprice>span:nth-child(5)>span{
+    text-align: center;
+	display: block;
+	width:100%;
+}
+.yuesaoprice>span:nth-child(5)>span:nth-child(1){
+	margin-top:0.3rem;
+}
+.yuesaoprice>span:nth-child(6){
+    color:#FFF;
+    width:3rem;
+    height:3rem;
+    border-radius:50%;
+    background: #74CDD7;
+    font-size: 0.875rem;
+    float:right;
+    margin-top:1.28rem;
+    /*margin-top:-1.5rem;*/
+    margin-right:0.3rem;
+}
+.yuesaoprice>span:nth-child(6)>span{
+    text-align: center;
+	display: block;
+	width:100%;
+}
+.yuesaoprice>span:nth-child(6)>span:nth-child(1){
+	margin-top:0.9rem;
+}
+/*三个月嫂结束*/
+/*弹出支付的弹窗*/
+/*点击出现遮罩层*/
+.blockzhezhao{
+	position: fixed;
+	top: 0%;
+	left: 0%;
+	width: 100%;
+	height: 100%;
+	background-color: black;
+	z-index:300;
+	opacity:.5;
+	display: none;
+}
+.zhezhaocontain{
+	position:fixed;
+	bottom:0;
+	background: #FFF;
+	z-index:400;
+	width:100%;
+	display: none;
+	/*display: block;*/
+}
+.yuesaoorder{
+    border-bottom:1px solid #CCC;
+    overflow: hidden;
+}
+.yuesaoorder>span{
+	display:block;
+	float:left;
+	padding:0.9rem 0;
+}
+.yuesaoorder>span:nth-child(1)>img{
+  display:block;
+  float:left;
+  width:1.4375rem;
+  height:1.4375rem;
+  padding-left:1rem;
+  /*display: none*/
+}
+.yuesaoorder>span:nth-child(1){
+	width:20%;
+}
+.yuesaoorder>span:nth-child(2){
+	width:60%;
+	text-align: center;
+	 font-size: 1.1125rem;
+    color: #000;
+    font-weight: 600;
+}
+.yuesaoorder>span:nth-child(3){
+	width:20%;
+}
+.paymoney{
+	text-align: center;
+	color:#FCEB76;
+	padding:2rem 0 1.5rem 0;
+}
+.paymoney>span:nth-child(1){
+	font-size: 2.125rem;
+}
+.paymoney>span:nth-child(2){
+	text-align: center;
+	color:#FCEB76;
+	font-size: 3.1875rem;
+}
+.contains{
+	overflow: hidden;
+	padding-bottom:3rem; 
+}
+.contains>ul>li{
+	float: left;
+	font-size: 1.125rem;
+	color: #999;
+	padding-left: 1rem;
+	padding-top: 1.3rem;
+	padding-right: 1rem;
+}
+.contains>ul>li:nth-child(1){
+	float: left;
+}
+.contains>ul>li:nth-child(2){
+	float: right;
+}
+.contains>ul>li:nth-child(3){
+	float: left;
+	clear:both;
+}
+.contains>ul>li:nth-child(4){
+	float: right;
+}
+.submituserinfo{
+	margin:0rem 3rem 1rem;
+	background: #8DE4E0;
+	border-radius: 1.5rem;
+	height:3rem;
+	line-height: 2.75rem;
+	color:#FFF;
+	text-align: center;
+	font-size: 1.25rem;
+}
+/*支付结束*/
+/*预定开始*/
+.zhezhaocontain2{
+	position:fixed;
+	bottom:0;
+	background: #FFF;
+	z-index:400;
+	width:100%;
+	display: block;
+	display: none;
+}
+.yuesaoorder2{
+    border-bottom:1px solid #CCC;
+    overflow: hidden;
+}
+.yuesaoorder2>span{
+	display:block;
+	float:left;
+	padding:0.9rem 0;
+}
+.yuesaoorder2>span:nth-child(1)>img{
+  display:block;
+  float:left;
+  width:1.4375rem;
+  height:1.4375rem;
+  padding-left:1rem;
+  /*display: none*/
+}
+.yuesaoorder2>span:nth-child(1){
+	width:20%;
+}
+.yuesaoorder2>span:nth-child(2){
+	width:60%;
+	text-align: center;
+	 font-size: 1.1125rem;
+    color: #000;
+    font-weight: 600;
+}
+.yuesaoordermain{
+	padding:0 1.4375rem 0 1rem;
+	overflow: hidden;
+}
+.yuesaoordermain>ul>li{
+	clear:both;
+}
+.yuesaoordermain>ul>li>span{
+	display: block;
+	float:left;
+	padding-top:1.6rem;
+}
+.yuesaoordermain>ul>li>span>img{
+	display: block;
+	width:1.375rem;
+	height:1.375rem;
+}
+.yuesaoordermain>ul>li>span:nth-child(2){
+	padding-left:1.125rem;
+	font-size: 0.9375rem;
+	color:#929292;
+}
+#orderprice{
+	color:#FCEB76;
+	font-size:1.5rem;
+	padding-top:1.5rem;
+}
+.submituserinfoout{
+	width:100%;
+	position: fixed;
+	bottom:0px;
+	background: #FFF;
+	/*background: red;*/
+}
+.submituserinfo2{
+	/*position: fixed;*/
+	/*bottom:1.4375rem;*/
+	/*width:21.5625rem;*/
+	margin:0rem 3rem 1rem;
+	background: #6CBAB5;
+	border-radius: 1.5rem;
+	height:2.75rem;
+	line-height: 2.75rem;
+	color:#FFF;
+	text-align: center;
+	font-size: 1.125rem;
+}
+/*预定结束*/
+/*遮罩结束*/
+/*取消和查看更多*/
+.cancelfixed{
+	position:fixed;
+	bottom:0rem;
+	background: #FFF;
+	z-index:200;
+	width:100%;
+	height:3.5rem;
+	/*margin-bottom:1rem;*/
+	-webkit-box-shadow: #ccc 0px 0px 0.625rem;
+	box-shadow: #ccc 0px 0px 0.625rem;
+}
+.cancelfixed>span:nth-child(1){
+	    float: left;
+	 color: #7CEBD9;
+    margin-left: 2rem;
+    margin-top: .5rem;
+    font-size: .875rem;
+    height: 2.1875rem;
+    line-height: 2.1875rem;
+}
+.cancelfixed>span:nth-child(2){
+	    float: right;
+	    display: block;
+     width: 6.875rem;
+    height: 2.6rem;
+    margin-right: 1.5rem;
+    margin-top: .5rem;
+}
+.cancelfixed>span:nth-child(2)>img{
+	   /* float: left;
+	    display: block*/;
+    width: 6.875rem;
+    height: 2.2rem;
+     
+     /*margin-left: 2rem;*/
+}

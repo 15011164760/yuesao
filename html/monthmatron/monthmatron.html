@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>母婴服务</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<link rel="stylesheet" href="../../css/monthmatron/monthmatron.css">
+	<link rel="stylesheet" href="../../css/styles/time.css">
+	<link rel="stylesheet" href="../../css/styles/mdialogescort.css">
+	<link rel="stylesheet" href="../../css/styles/swiper.min.css">
+	<script src="../../js/without/jquery.min.js"></script>
+	<script type="text/javascript" src="../../js/without/swiper.jquery.min.js"></script>
+	<script type="text/javascript" src="../../js/inner/monthmatron/rem.js"></script>
+	<script src="../../js/without/time.js"></script>
+	<!-- <script src="../../js/without/viewprot.js"></script> -->
+	<script type="text/javascript" src="../../js/without/mdialogescort.js"></script>
+	<script type="text/javascript" src="../../js/inner/monthmatron/monthmatron.js"></script>
+	<!-- <script>
+			 document.write("<script type='text/javascript' src='../../js/inner/monthmatron/monthmatron.js?"+new Date().getTime()+"'></scri"+"pt>")
+	</script> -->
+</head>
+<body>
+     <div class="header-topnav">
+		      <div class="m-sidebar">
+	      			<span class="backup"></span>
+	      			<span>母婴护理</span>
+	      			<!-- <span class="gotowaitselect">
+	      			   <span>候选服务员</span> 
+	      			   <span class="serve-num">0</span>
+	      			</span> -->
+		      </div>
+		</div>
+		<img src="../../img/monthmatron/back.png" alt=""  ondragstart="return false;" id="outhomebtn">
+     <div class="banners">
+     		<img src="../../img/monthmatron/banner.png" alt="">
+     </div>
+     <!-- <div id="outhomebtn"><img src="../../img/monthmatron/outhome.png" alt=""></div> -->
+     <div class="user-info">
+     		<!-- 个人信息开始 -->
+			<div class="user-info-main">
+			    <ul class="usercontain">
+			        <p class="usertitle">孕妇信息</p>
+			    	<li>
+			    	     <span>产妇姓名</span>
+			    	     <span class="username users" id="truename">请选择</span>
+			    	        <!-- <input type="text" placeholder="请输入姓名" id="usernameinp"> -->
+			    	        
+			    	     
+			    	</li>
+			    	<li><span>身份证号</span>
+			    	     <span class="users usersIDCard">请选择</span>
+			    	     <!-- <input type="text"  placeholder="请输入身份证号码" class="isIDCard" id="isIDCard"> -->
+						  <!-- <span class="alertyuasu"></span> -->
+			    	     
+			    	</li>
+			    	<li class="servicetype-hide servicetypes">
+				    	<span>服务类型</span>
+				    	<span class="servicetypebtn">
+				    	          <span id="servicetype" datatype='请选择'>请选择</span>
+			    	             <img src="../../img/monthmatron/rightbtn.png" alt="" class="wodetextimg">
+				    	<!-- <select id="servicetype">
+								  <option value="2">月嫂 </option>
+								  <option value="3">育儿嫂</option>
+								  <option value="4">开奶师</option>
+						</select> -->
+						</span>
+						 <div class='servicetypealert' id="servicetypealert">
+			                <p><span class='stateCheck'></span><span class="stateText" datatype="2">月嫂</span></p>
+			                <p><span class='stateCheck'></span><span class="stateText" datatype="3">育儿嫂</span></p>
+			                <!-- <p><span class='stateCheck'></span><span class="stateText" datatype="4">开奶师</span></p> -->
+			            </div>
+				    </li>
+			    	<li>
+			    		<span>预产期（或产期）</span>
+			    		<span class="calendar">
+                 		<!-- <span class="calendarinner"></span>
+			    			<span><img src="../../img/monthmatron/calendar.png" alt=""></span> -->
+								 <span class="calendarinner" datatype='请选择'>请选择</span>
+			    	             <img src="../../img/monthmatron/rightbtn.png" alt="" class="wodetextimg">
+ 			    		</span>
+			    	</li>
+			    	<li class="user-info-main-hide">
+			    	    <span>服务周期</span>
+			    	    <span id="servicecycles">
+			    	    		<!-- <select id="servicecycle">
+			    	    				<option value="26">26天</option>
+										<option value="42">42天</option>
+										<option value="52">52天</option>
+										<option value="self">自选<input type="number" id="selfchooseday" placeholder="请输入天数" maxlength="7"></option>
+								</select> -->
+								<span id="servicecycle">请选择</span>
+			    	             <img src="../../img/monthmatron/rightbtn.png" alt="" class="wodetextimg">
+			    	    </span>
+			    	</li>
+			    	<li id="dochospitalout">
+			    		<span>建档医院</span>
+			    		<span id="dochospitalmid" class="users">
+						    	<!-- <select id="dochospital">
+								</select> -->
+								<input type="text" placeholder="请输入建档医院" id="dochospital">
+			    		</span>
+			    	</li>
+			    </ul>
+			</div>
+			<!-- 地址开始 -->
+			<div class="user-info-main">
+			    <ul class="usercontain">
+			        <p class="usertitle">服务地址</p>
+			    	<li class="huangxing" sytle="overflow:hidden">
+			    	     <span>北京市</span>
+			    	     <span class="citybtn" id="citybtn">
+			    	     	<span>
+								 <select class="citychoose" id="serviceaddress" style="font-size: 0.9375rem">
+									<option>西城区 </option>
+								    <option>东城区</option>
+								    <option>海淀区</option>
+								    <option>朝阳区</option>
+								    <option>丰台区</option>
+								    <option>石景山区</option>
+								    <option>门头沟区</option>
+								    <option>房山区</option>
+								    <option>通州区</option>
+								    <option>顺义区</option>
+								    <option>昌平区</option>
+								    <option>大兴区</option>
+								    <option>怀柔区</option>
+								    <option>平谷区</option>
+								    <option>延庆区</option>
+								    <option>密云区</option>
+								</select>
+			    	     	<!-- <img src="../../img/monthmatron/citybtn.png" alt=""></span> -->
+						    </span>
+						  </span> 
+						  <span id="filedaddress"><!-- 富力摩根中心 E315室 -->
+			    	       <!-- <input type="text" placeholder="请输入详细的地址" id="detailsaddress"> -->
+			    	       <textarea name=""   rows="4" id="detailsaddress" placeholder="请输入详细的地址" maxlength="60"></textarea>
+			    	    <!--   <div class="textarea" contenteditable="true"><br /></div> -->
+			    	     </span>
+			    	</li>
+			    </ul>
+			</div>
+			<!-- 地址结束 -->
+			<!-- 地址开始 -->
+			<div class="user-info-main user-info-main-hide user-info-mainvis">
+			    <ul class="usercontain">
+			        <p class="usertitle">护理员要求</p>
+			    	<li>
+			    	    <!--  <span>年龄区间</span>
+			    	     <span class="agequjian"><input type="number" placeholder="最小" id="escortagerangeinp1" max="2">岁~<input type="number" placeholder="最大" id="escortagerangeinp2" max="2">岁</span> -->
+			    	</li>
+			    	<li class="choosecitythree">
+			    	     <span>籍贯优先级</span>
+			    	     <span>
+			    	             <span class="wodetext">不限</span>
+			    	             <img src="../../img/monthmatron/rightbtn.png" alt="" class="wodetextimg">
+			    	     </span>
+			    	</li>
+			    	<li class="escortexperiences">
+			    	     <span>服务经验</span>
+			    	     <span><!-- <b>5年</b>以上 -->
+								<!-- <select id="escortexperience">
+												<option value=''>不限</option>
+												<option value="2,100">2年以上</option>
+												<option value="5,100">5年以上</option>
+								</select> -->
+								 <span id="escortexperience" dataexperience='请选择'>请选择</span>
+			    	             <img src="../../img/monthmatron/rightbtn.png" alt="" class="wodetextimg">
+			    	     </span>
+			    	      <div class='escortexperiencealert' id="escortexperiencealert">
+			                <p><span class='stateCheck'></span><span class="stateText" dataexperience=''>不限</span></p>
+			                <p><span class='stateCheck'></span><span class="stateText" dataexperience='2,100'>2年以上</span></p>
+			                <p><span class='stateCheck'></span><span class="stateText" dataexperience='5,100'>5年以上</span></p>
+			            </div>
+			    	</li>
+			    </ul>
+			</div>
+			<!-- 地址结束 -->
+			<!-- 下单须知开始 -->
+			<div style="clear: both"></div>
+			<div class="user-info-main">
+			    <ul class="usercontain usercontainaddress">
+			        <p class="usertitle">下单须知</p>
+			    	<!-- <li>
+			    	     1、产妇护理：<br>恶露观察、乳房护理、月子营养餐制作、产后形体恢复指导、生活护理、心理指导等。
+			    	</li>
+			    	<li>
+			    	    2、新生儿护理：<br>黄疸观察、脐带护理、大小便观察、洗澡抚触被动操、五觉训练、五官护理、合理喂养及良好生活规律的培养。
+			    	</li> -->
+			    	<li>
+			    	   1、以上服务为26个工作日/月。
+			    	</li>
+			    	<li>
+			    	     2、双胞胎加收20%服务费。
+			    	</li>
+			    	<li class="lastexplain">
+			    	    3、早产儿加收20%服务费。
+			    	</li>
+			    </ul>
+			</div>
+			<div style="height:1rem;"></div>
+			<!-- 下单须知结束 -->
+     </div>
+     <div style="height:4rem"></div>
+	<!-- 提交 -->
+     <div class="submituserinfoout"><div class="submituserinfo">提交</div></div>
+     <!-- 开始挑选遮罩层-->
+      <div class="blockzhezhao"></div>
+      <div class="zhezhaocontain">	
+      			 <div class="closepage"><img src="../../img/monthmatron/closepage.png" alt=""></div>
+				  <div class="header-top">
+						<p>  根据您的预约需求，向您推荐了<span class="yuesaolength">0位</span>服务人员，<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;您可以从中挑选进行<span>视频面试</span>预约。</p>
+				  </div>
+				  <div class="needkonw">
+				     <div>
+							<img src="../../img/monthmatron/decorate.png" alt="">
+							<p> 面试须知：</p>
+				     </div>
+				     <ul>
+				     	<li>1、面试费：<font color="#67C1D0">30元/位。</font></li>
+				     	<li>2、通讯畅通时间：<font color="#67C1D0">30天</font>（服务人员未被其它用户预定并付费的情况下）。 </li>
+				     	<li>3、若您对候选服务人员支付了面试费用但未进行面试时，被其他客户预定，系统会<font color="#67C1D0">返还</font>您对应的面试名额。 </li>
+				     	<li> 4、请您尽可能在面试某服务人员后的<font color="#67C1D0">45分钟</font>内下单，超时可能会被抢单。</li>
+				     </ul>
+				   <div id="submituserinfos">开始挑选</div>
+				   <div class="canchoosenums yuesaolength">0位<!-- <img src="../../img/monthmatron/canchoosenums.png" alt=""> --></div>
+				  </div>
+				  <div style="height:5rem;clear:both;"></div>
+      </div>
+     <!-- 结束挑选 -->
+     <!-- 城市弹窗开始 -->
+         <!-- <div class="blockzhezhao"></div> -->
+        <!-- <div class="choosecitythree">选择城市</div> -->
+        <div class="alertcitychoose">
+             <p>
+                 <span class="cancelcitybtn">取消</span>
+                 <span  class="confirmcitys">确定</span>
+             </p>
+             <p class="donotcarecity">
+                 <span style="color:#000">不限籍贯</span>
+                 <span></span>
+             </p>
+             <p class="choosethreeself">
+                 <span style="color:#000">自选</span>
+                 <span style="color:#2E9C95;font-size:.75rem;float:left;padding-left:.5rem;display: none" class="citytips">(*最多选择3个省份)</span>
+                 <span style="float: right"><img src="../../img/monthmatron/citybtn.png" alt="" class="xialacityimg"></span>
+             </p>
+              <!-- <div class="havechoose"> </div>  -->
+             <ul  class="seeallcitys">
+                        <li>北京</li>
+                        <li>天津</li>
+                        <li>河北 </li>
+                        <li>山西 </li>
+                        <li>内蒙古 </li>
+                        <li>辽宁 </li>
+                        <li>吉林 </li>
+                        <li>黑龙江</li>
+                        <li>上海</li>
+                        <li>江苏</li>
+                        <li>浙江</li>
+                        <li>安徽</li>
+                        <li>福建</li>
+                        <li>江西</li>
+                        <li>山东</li>
+                        <li>河南</li>
+                        <li>湖北</li>
+                        <li>湖南</li>
+                        <li>广东</li>
+                        <li>广西</li>
+                        <li>海南</li>
+                        <li>重庆</li>
+                        <li>四川</li>
+                        <li>贵州</li>
+                        <li>云南</li>
+                        <li>西藏</li>
+                        <li>陕西</li>
+                        <li>甘肃</li>
+                        <li>青海</li>
+                        <li>宁夏</li>
+                        <li>新疆</li>
+                        <li>港澳台</li>
+              </ul>
+        </div>
+        <!-- <div class="wodetext"></div> -->
+     <!-- 城市弹窗end -->
+     <!-- 时间服务周期控制键盘start -->
+     <div class="timechoosecircleall">
+           <div id="timeTop">
+                <span id="timeClose">取消</span>
+                <span id="timeOk">确定</span>
+            </div>
+           <!--  <div style="height:4rem"></div> -->
+            <div id="timeLeft">
+			   <div class="swiper-container swiper-container_monthorday1 swiperdays">
+                    <ul class="swiper-wrapper swiper-wrapperul">
+                        <li class="swiper-slide swiper-slidetype">按天选择</li>
+                        <li class="swiper-slide swiper-slidetype">按月选择</li>
+                        <!-- <li class="swiper-slide">按月选择</li> -->
+                    </ul>
+                </div>
+            </div>
+            <div id="timeRight">
+			   <div class="swiper-container swiper-container_monthorday2 swiperdaysdetail">
+                    <ul class="swiper-wrapper swiper-wrapperul" id="swiper-wrappertong">
+                        <li class="swiper-slide" datatype='26'>26天</li>
+                        <li class="swiper-slide" datatype='42'>42天</li>
+                        <li class="swiper-slide" datatype='52'>52天</li>
+                    </ul>
+                </div>
+            </div>
+     </div>
+     <!-- 时间控制键盘 end-->
+         <!-- 预产期控制键盘start -->
+     <div class="timechoosecircleall2">
+           <div id="timeTop2">
+                <span id="timeClose2">取消</span>
+                <span id="timeOk2">确定</span>
+            </div>
+            <!-- <div style="height:4.5rem"></div> -->
+            <div id="timeLeft2">
+			   <div class="swiper-container swiper-container_monthordaya1 swiperyear">
+                    <ul class="swiper-wrapper swiper-wrapperleft swiper-wrapperyear">
+                    </ul>
+                </div>
+            </div>
+             <div id="timeMiddle2">
+			   <div class="swiper-container swiper-container_monthordaya2 swipermonth">
+                    <ul class="swiper-wrapper swiper-wrappermid swiper-wrappermonth">
+                    </ul>
+                </div>
+            </div>
+            <div id="timeRight2">
+			   <div class="swiper-container swiper-container_monthordaya3 swiperdate" id="swiper-container_monthorday">
+                    <ul class="swiper-wrapper swiper-wrapperright swiper-wrapperdate" id="swiper-wrappertong2">
+                    </ul>
+                </div>
+            </div>
+     </div>
+     <!-- 预产期控制插件 end-->
+</body>
+</html>
+
+
+

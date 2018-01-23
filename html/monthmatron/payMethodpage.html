@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>订单支付</title>
+    <link rel="stylesheet" href="../../css/styles/reset.css">
+    <link rel="stylesheet" href="../../css/styles/mdialog.css">
+    <script type="text/javascript" src="../../js/without/viewprot.js"></script>
+     <script>
+        document.write("<link rel='stylesheet' href='../../css/comment/payMethod/payMethod.css?"+new Date().getTime()+"'>")
+    </script>
+    <script type="text/javascript" src="../../js/without/zepto.min.js"></script>
+    <script type="text/javascript" src="../../js/without/mdialog.js"></script>
+    <script>
+        document.write("<script type='text/javascript' src='../../js/inner/MyPage/payMethodpage.js?"+new Date().getTime()+"'></scri"+"pt>")
+    </script>
+</head>
+
+<body>
+    <div id="header">
+        <span id="goBack">
+            <img src="../../img/MyPage/setting/goBack.png" alt="">
+        </span>
+        支付页面
+    </div>
+    <header>
+        <p class='orderP1'>订单提交完成，请尽快完成付款！</p>
+        <p class='orderP2'>订单为您保留<span id="time"></span>分钟，请及时付款。</p>
+        <p class='orderP3'><span class='orderP3Span'>待付金额：</span><span class='payMoney'>5.00</span></p>
+        <p class='orderName'>134131551345152156</p>
+    </header>
+    <div class='fangshi'>
+        选择支付方式
+    </div>
+    <div class='payMethodWrap'>
+        <div class='wrap weixin'>
+            <img class='weixinIcon' src="../../img/comment/weixin.png" alt="">
+            <p class='name'>微信</p>
+            <p class='P1'>使用微信进行付款</p>
+            <img class='right' src="../../img/comment/back.png" alt="">
+        </div>
+        <div class='wrap zhifubao'>
+            <img class='weixinIcon' src="../../img/comment/zhifubao.png" alt="">
+            <p class='name'>支付宝</p>
+            <p class='P1'>使用支付宝进行付款</p>
+            <img class='right' src="../../img/comment/back.png" alt="">
+        </div>
+        <div class='wrap lakala'>
+            <img class='weixinIcon' src="../../img/comment/lakala.png" alt="">
+            <p class='name'>拉卡拉支付</p>
+            <p class='P1'>使用拉卡拉进行付款</p>
+            <img class='right' src="../../img/comment/back.png" alt="">
+        </div>
+    </div>
+
+</body>
+
+</html>

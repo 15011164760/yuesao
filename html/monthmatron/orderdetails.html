@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>订单详情</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta name="format-detection" content="telephone=no" />
+	<link rel="stylesheet" href="../../css/monthmatron/orderdetails.css">
+	<script type="text/javascript" src="../../js/inner/monthmatron/rem.js"></script>
+	<script src="../../js/without/jquery.min.js"></script>
+	<script src="../../js/without/viewprot.js"></script>
+	<script type="text/javascript" src="../../js/inner/monthmatron/orderdetails.js"></script>
+</head>
+<body>
+        <div class="header-top header-topfixed">
+		      <div style="position: fixed;top:0rem;">
+	      			<span class="backup"><img src="../../img/monthmatron/back.png" alt=""  ondragstart="return false;">
+	      			</span>
+	      			<span class="detailsbtn">
+	      			     <span class="statusbtn">订单状态</span>
+	      			     <span class="detailbtn">订单详情</span>
+	      			</span>
+		      </div>
+		      <div style="height:4rem"></div>
+		      <ul>
+		      	<li>
+		      	   <!-- <img src="../../img/monthmatron/right.png" alt="" class="orderstatusimg"> -->
+		      	   <img src="" alt="" class="orderstatusimg">
+		      	</li>
+		      	<li class="orderstatustext"><!-- 支付成功待服务 --></li>
+		      	<li class="ordercode"><!-- 订单编号：2012151651651 --></li>
+		      </ul>
+		</div>
+		  <div class="user-info">
+     		<!-- 个人信息开始 -->
+			<div class="user-info-main">
+			    <ul class="usercontain">
+			        <p class="usertitle"><span>|</span>孕妇信息</p>
+			    	<li>
+			    	     <span class="sickname"><!-- 姓名:<font color="#333">张秀莲&nbsp;&nbsp;&nbsp;&nbsp;</font> 年龄：<font color="#333">28岁</font>&nbsp;&nbsp;&nbsp;&nbsp;&#10;服务类型: <font color="#333">月嫂</font> --></span>
+			    	     <!-- <span class="username users">玛丽吉斯</span> -->
+			    	</li>
+			    	<li><span class="duedate"><!-- 预产期:<font color="#333">2017/05/25</font>  --></span>
+			    	</li>
+			    	<li>
+				    <span class="idcard"><!-- 身份证号:<font color="#333">370123199345268462</font> --> </span>
+				    </li>
+			    	<li class="user-info-main-hide">
+			    		<span class="servicecycle"><!-- 服务周期: <font color="#333">14天（半个月）</font></span> -->
+			    	</li>
+			    	<li>
+			    	    <span class="dochospital"><!-- 建档医院：<font color="#333">北京大学第二附属医院</font> --></span>
+			    	</li>
+			    </ul>
+			</div>
+			<!-- 地址开始 -->
+			<div class="user-info-main">
+			    <ul class="usercontain serviceaddress">
+			        <!-- <p class="usertitle"><span>|</span>服务地址</p>
+			    	<li id="addresss">
+			    	     <span><img src="../../img/monthmatron/addre.png" alt="">&nbsp;北京市&nbsp;&nbsp;西城区&nbsp;&nbsp;富力摩根中心E315室</span>
+			    	</li> -->
+			    </ul>
+			</div>
+			<!-- 地址结束 -->
+			<!-- 护理开始 -->
+			<div class="user-info-main user-info-main-hide">
+						    <ul class="usercontain">
+						        <p class="usertitle"><span>|</span>护理员要求：</p>
+						    	<li>
+						    	     <span id="experience" class="escortexperience"><!-- 服务经验:<font color="#333">5年以上</font> --></span>
+						    	    <!-- <span style="display: none" class="escortagerange"> -->
+						    	    <!-- 服务员年龄区间: <font color="#333">23~45岁</font> -->
+						    	    </span>
+						    	</li>
+						    	<li>
+						    	     <span class="escortcity"><!-- 籍贯优先级: <font color="#333">北京>河北>陕西</font> --></span>
+						    	</li>
+						    </ul>
+			</div>
+			<!-- 护理end -->
+			<!-- 订单追踪start -- >
+			<div class="user-info-main" style="display: none">
+						    <ul class="usercontain" id="usercontain">
+						        <p class="usertitle"><span>|</span>订单跟踪：</p>
+						    	<li>
+						    	    <span style="padding-right: 0;padding-left: 1rem">2017.05.16 08:25 
+						    	</li>
+						    	<li id="yuesaoser">
+									<span>月嫂服务</span>
+									<span>30天</span>
+									<span>12600元</span>
+						    	</li>
+						    	<li>
+						    	    <span style="padding-right: 0;padding-left: 1rem">2017.05.16 08:25 
+						    	</li>
+						    	<li id="keep">
+									<span>续费</span>
+									<span>30天</span>
+									<span>600元</span>
+									<span>续费详情</span>
+						    	</li>
+						    	<li>
+						    	    <span style="padding-right: 0;padding-left: 1rem">2017.05.16 08:25 
+						    	</li>
+						    	<li id="keepdetails">
+									<span>退款申请</span>
+									<span>30天</span>
+									<span>600元</span>
+						    	</li>
+						    	<li>
+						    	    <span style="padding-right: 0;padding-left: 1rem">2017.05.16 08:25 
+						    	</li>
+						    	<li id="keepdetails2">
+									<span>退款申请已受理</span>
+									<span>30天</span>
+									<span>600元</span>
+						    	</li>
+						    	<li>
+						    	    <span style="padding-right: 0;padding-left: 1rem">2017.05.16 08:25 
+						    	</li>
+						    	<li id="keepdetails3">
+									<span>退款申请已确认</span>
+									<span>30天</span>
+									<span>600元</span>
+						    	</li>
+						    	<li>
+						    	    <span style="padding-right: 0;padding-left: 1rem">2017.05.16 08:25 
+						    	</li>
+						    	<li id="keepdetails4">
+									<span>投诉</span>
+									<span>已受理</span>
+						    	</li>
+						    	<li class="complaint">
+									<span></span>
+									<span>电话联系护理员，护理员说他有事不能来服务</span>
+						    	</li>
+						    	<li class="complaint">
+									<span></span>
+									<span>联系不上护理员</span>
+						    	</li>
+						    	<li class="complaint">
+									<span></span>
+									<span style="padding-bottom: 1rem">发服务开始护理员还没到</span>
+						    	</li>
+						    </ul>
+			</div>
+			<!-- 订单追踪end -->
+			<!-- 服务记录 -->
+			<!-- <div class="user-info-main">
+			    <ul class="usercontain">
+			        <p class="usertitle"><span>|</span>服务记录：</p>
+			        <li>
+						<span style="padding-right: 0;padding-left: 1rem">2017.05.16 08:25 
+				    </li>
+				    <li class="searves">
+					   <span><img src="../../img/monthmatron/headphoto.png" alt=""></span>
+					   <span>服务人员ID：<font color="#000">HY0986</font><br>姓名：<font color="#000">张扬</font>&nbsp;&nbsp;&nbsp;性别：<font color="#000">女</font></span>
+						<span>
+								<img src="../../img/monthmatron/helptel.png" alt="">
+								<span>致电护理员</span>
+						</span>
+			    	</li>
+			    	<li class="searves">
+					   <span><img src="../../img/monthmatron/headphoto.png" alt=""></span>
+					   <span>服务人员ID：<font color="#000">HY0986</font><br>姓名：<font color="#000">张扬</font>&nbsp;&nbsp;&nbsp;性别：<font color="#000">女</font></span>
+						<span>
+								<img src="../../img/monthmatron/helptel.png" alt="">
+								<span>致电护理员</span>
+						</span>
+			    	</li>
+			    </ul>
+			</div> -->
+			<!-- 服务记录end -->
+			<div style="height:4rem;"></div>
+			<!-- 下单须知结束 -->
+        </div>
+	 <div class="pagebottombtn">
+				<span class="whitespacebtn"></span>
+				<span class="refondapplication">申请退款</span>
+				<span class="renewbtn">续约</span>
+	 </div>
+	 <!-- 遮罩层  退款的开始 -->
+		<div class="blockzhezhao"></div>
+		<!-- <div class="alertcomplaint"><img src="../../img/monthmatron/alertcomplaint.png" alt=""></div> -->
+		 <div class="header-topfixout">
+		      <div class="closepage"><img src="../../img/monthmatron/closepage.png" alt="" class="closepageimg"></div>
+			  <div class="header-topfix">
+					<img src="../../img/monthmatron/replacepeople.png" alt="">
+					<p><b><i>用户退款</i></b></p>
+					<ul>
+						<li>
+						    <span class="selectereason"></span>
+						    <span class="selectereasontext">找到了其他更好的月嫂</span>
+						</li>
+						<li>
+						    <span class="selectereason"></span>
+						    <span class="selectereasontext">孕妇原因，不需要月嫂了</span>
+						</li>
+						<li>
+						    <span class="selectereason"></span>
+						    <span class="selectereasontext">月嫂不专业，不想用了</span>
+						</li>
+						<li class="last-child">
+						    <span class="selectereason"></span>
+						    <span class="selectereasontext">其他原因</span>
+						    <!-- <input type="text" placeholder="写入原因" class="selectereasontextinput"> -->
+						</li>
+					</ul>
+					<div class="absolutbtn">
+						<div id="submituserinfo">用户退款</div>
+						<div id="submituserinfo2">我再想想</div>
+					</div>
+			  </div>
+		 </div>
+		 <!-- 遮罩层  退款的结束 -->
+   </body>
+</html>

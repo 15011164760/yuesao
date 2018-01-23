@@ -1,0 +1,157 @@
+@font-face {
+font-family: 'baidu';
+src:url('baidu.ttf');
+}
+#animationTipBox {
+	font-family: 'PingFang-SC-Medium';
+	font-size: 0.18rem;
+	background-color: #fff;
+	border-radius: 0.34rem;
+	position: fixed;
+	left: 50%;
+	top: 50%;
+	margin-left: -3.33rem;
+	margin-top: -1.13rem;
+	padding-bottom: 0.5rem;
+	z-index: 1001;
+	-webkit-animation: alertAnimation .3s ease-in-out 0 1;
+	-moz-animation: alertAnimation .3s ease-in-out 0 1;
+	animation: alertAnimation .3s ease-in-out 0 1
+}
+#animationTipBox #alertClose{
+	width: 2rem;
+	height: 2rem;
+	background: url('../../img/comment/alert/close.png')no-repeat;
+	background-size: 100% 100%;
+	position: absolute;
+	top: -2.5rem;
+	right: 0;
+}
+/*自定义类名*/
+	.underLine{
+		text-decoration: underline;
+	}
+	.thirtySix{
+		font-size: 0.8rem;
+	}
+	.forty{
+		font-size: 0.83rem;
+	}
+	.animateA,
+	.animateB{
+		position: relative;
+	}
+	.animateB{
+		position: absolute;
+		top: 0;
+		left: 120%;
+    white-space: nowrap;
+	}
+/*top*/
+	#alertTop{
+		width: 100%;
+		height:4rem;
+		padding: 0.5rem 0 0.3rem;
+	}
+	#alertIcon{
+		display: block;
+		width: 2rem;
+		height: 2rem;
+		margin: 0 auto;
+	}
+	.tipIcon{
+		background: url('../../img/comment/alert/tip.png')no-repeat;
+		background-size: 100% 100%;
+	}
+	.removePeopleIcon{
+		background: url('../../img/comment/alert/removePeople.png')no-repeat;
+		background-size: 100% 100%;
+	}
+	.successIcon{
+		background: url('../../img/comment/alert/success.png')no-repeat;
+		background-size: 100% 100%;
+	}
+	.cancelOrderIcon{
+		background: url('../../img/comment/alert/cancelOrder.png')no-repeat;
+		background-size: 100% 100%;
+	}
+	.payIcon{
+		background: url('../../img/comment/alert/pay.png')no-repeat;
+		background-size: 100% 100%;
+	}
+	.errorIcon{
+		background: url('../../img/comment/alert/error.png')no-repeat;
+		background-size: 100% 100%;
+	}
+	.againorder{
+		background: url('../../img/comment/alert/cancels.png')no-repeat;
+		background-size: 100% 100%;
+	}
+	#iconStr{
+		width: 100%;
+		text-align: center;
+		font-size: 1rem;
+		font-family: 'baidu';
+		color: #fff;
+		font-style: italic;
+		position: absolute;
+		top: 2.2rem;
+		text-shadow: 2px 2px 3px #aaa;
+	}
+/*main*/
+	#animationTipBox #alertBottom{
+		position: relative;
+		margin-top: 0.5rem;
+	}
+	#animationTipBox #alertBottom:after{
+		display: block;
+		content: '';
+		clear: both;
+		box-shadow: inset;
+	}
+	#animationTipBox #alertIcon2{
+		display: block;
+		width: 0;
+		height: 0;
+		border-bottom: 0.8rem solid #fff;
+		border-left: 0.8rem solid transparent;
+		border-right: 0.8rem solid transparent;
+		position: absolute;
+		top: -1rem;
+		right: 0.5rem;
+	}
+	#animationTipBox .okoButton,
+	#animationTipBox .finishButton {
+		display: block;
+		width: 6.2rem;
+		height: 1.5rem;
+		margin: 0.2rem auto 0;
+		border: 0;
+		padding: 0;
+		border-radius: 1rem;
+		color: #fff;
+		font-size: 0.8rem;
+		font-family: PingFang-SC-Medium;
+	}
+	#animationTipBox .dec_txt p{
+		margin-bottom: 0.2rem;
+		margin-top: 0;
+	}
+	#animationTipBox .dec_txt {
+		min-height: 1rem;
+		text-align: center;
+		color: #777;
+		padding: 5px 0 10px 0
+	}
+
+
+.mask {
+	width: 100%;
+	height: 100%;
+	background-color: #000;
+	opacity: .8;
+	position: fixed;
+	left: 0;
+	top: 0;
+	z-index: 1000
+}

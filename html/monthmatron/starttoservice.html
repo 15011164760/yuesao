@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<!-- <html lang="en" ng-app="CartModule"> -->
+<html lang="en" ng-app="CartModule">
+<head>
+	<meta charset="UTF-8">
+	<title>信息补充</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+   <meta name="format-detection" content="telephone=no" />
+        <link rel="stylesheet" href="../../css/styles/time.css">
+        <!-- <link rel="stylesheet" href="../../css/styles/mdialog.css"> -->
+        <link rel="stylesheet" href="../../css/styles/mdialogescort.css">
+        <link rel="stylesheet" href="../../css/styles/swiper.min.css">
+	      <link rel="stylesheet" href="../../css/monthmatron/starttoservice.css">
+        <script type="text/javascript" src="../../js/inner/monthmatron/rem.js"></script>
+        <!-- <script src="../../js/without/angular.min.js"></script> -->
+        <script src="../../js/without/jquery.min.js"></script>
+        <script type="text/javascript" src="../../js/without/swiper.jquery.min.js"></script>
+        <script src="../../js/without/viewprot.js"></script>
+        <script src="../../js/without/time.js"></script>
+        <!-- <script type="text/javascript" src="../../js/without/mdialog.js"></script> -->
+        <script src="../../js/without/mdialogescort.js"></script>
+	      <script type="text/javascript" src="../../js/inner/monthmatron/starttoservice.js"></script>
+</head>
+<!-- <body ng-controller="CartController"> -->
+<body>
+	  <div class="header-top header-topfixed">
+		      <div class="m-sidebar">
+	      			<span class="backup"><img src="../../img/monthmatron/back.png" alt=""  ondragstart="return false;"></span>
+	      			<span>信息补充</span>
+		      </div>
+	  </div>
+	  <div style="height:4rem"></div>
+	  <div class="startconfirm">
+                 <ul>
+                 	<!-- <p>—— 服务信息补充 ——</p> -->
+                 	<li>
+                 	   <span>服务开始时间</span>
+                           <!-- <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2017-10-8</span> -->
+                         <!--   <span class="calendar" id="calendar">
+                                                <span class="calendarinner">2017-01-01 </span>
+                                                <span>
+                                                <img src="../../img/monthmatron/calendar.png" alt="" id="calendarimg">
+                                                <img src="../../img/monthmatron/rightbtn.png" alt="" id="serveright" style="opacity: 0">
+                                                </span>
+                          </span>
+                 	   <img src="../../img/monthmatron/rightbtn.png" alt="" id="serveright" style="opacity: 0"> -->
+                      <span class="calendar">
+                         <span class="calendarinner" datatype='请选择'>请选择</span>
+                                 <img src="../../img/monthmatron/rightbtn.png" alt="" class="wodetextimg">
+                      </span>
+                 	</li>
+                 	<li>
+                 	   <span>服务周期</span>
+                         <!--   <span>
+                                  <select id="servicecycle">
+                                    <option value="26">26天</option>
+                                    <option value="42">42天</option>
+                                    <option value="52">52天</option>
+                                    <option value="self">自选<input id="selfchooseday"  type="text"  onfocus="this.blur()"><span class="danweiday">天</span></option>
+                                </select>
+                 	      <img src="../../img/monthmatron/rightbtn.png" alt="" style="opacity: 0">
+                           </span> -->
+                            <span id="servicecycles">
+                            <span id="servicecycle" datatype='请选择'>请选择</span>
+                                     <img src="../../img/monthmatron/rightbtn.png" alt="" class="wodetextimg">
+                            </span>
+                 	</li>
+                 	<li class="childrennumbers">
+                 	   <span>宝宝数量</span>
+                 	    <!-- <span>
+                                <select class="childrennumber">
+                                          <option value="1">一个宝宝</option>
+                                          <option value="2"> 多个宝宝 </option>
+                                </select>
+                              <img src="../../img/monthmatron/rightbtn.png" alt="" style="opacity: 0">
+                           </span> -->
+                        <span class="childrennumberbtn">
+                            <span id="childrennumber" class="childrennumber" datatype='1'>一个宝宝</span>
+                            <img src="../../img/monthmatron/rightbtn.png" alt="" class="wodetextimg">
+                        </span>
+                        <div class='childrennumberalert' id="childrennumberalert">
+                                  <p><span class='stateCheck'></span><span class="stateText" datatype="1">一个宝宝</span></p>
+                                  <p><span class='stateCheck'></span><span class="stateText" datatype="2">多个宝宝</span></p>
+                        </div>
+                 	</li>
+                 	<li class="isprematurebirths">
+                 	   <span>是否早产</span>
+                 	    <!-- <span>
+                                <select class="isprematurebirth">
+                                          <option value="0">否</option>
+                                          <option value="1">是 </option>
+                                </select>
+                              <img src="../../img/monthmatron/rightbtn.png" alt="" style="opacity: 0">
+                           </span> -->
+                       <span class="isprematurebirthbtn">
+                            <span id="isprematurebirth" class="isprematurebirth" datatype='0'>否</span>
+                            <img src="../../img/monthmatron/rightbtn.png" alt="" class="wodetextimg">
+                        </span>
+                        <div class='isprematurebirthalert' id="isprematurebirthalert">
+                                  <p><span class='stateCheck'></span><span class="stateText" datatype="0">否</span></p>
+                                  <p><span class='stateCheck'></span><span class="stateText" datatype="1">是</span></p>
+                        </div>
+                 	</li>
+                  <li style="margin-bottom: 0">
+                     <span style="font-size: 1.125rem;font-weight: 800">费用合计:</span>
+                      <span style="font-size: 1.5rem;color:#FFE320;padding-right: 1rem" class="orderrestmoney">
+                            ￥2800
+                      </span>
+                  </li>
+                  <!-- <li class="zhongjiazhi">{{serviceday*2}}</li> -->
+                 </ul>
+		 </div>
+        <div class="confirmall" style="position: fixed;bottom:1.5625rem;left: 0;width:100%">
+              <p class="alerts">（*请如实填写，以便更好的服务）</p>
+              <div class="confirmbtn">确定</div>
+         </div>
+         <!-- 遮罩层  投诉的开始 -->
+    <div class="blockzhezhao"></div>
+     <div class="header-topfixout header-topfixout1">
+          <div class="closepage"><img src="../../img/monthmatron/closepage.png" alt="" class="closepageimg"></div>
+        <div class="header-topfix">
+          <!-- <img src="../../img/monthmatron/replacepeople.png" alt=""> -->
+          <p><b><i>输入周期</i></b></p>
+          <ul>
+            <li>
+            <span>您的服务周期为</span>
+      <span><input type="number" placeholder="输入天数" class="shuruday">天</span>
+                
+            </li>
+          </ul>
+          <div class="absolutbtn">
+            <div id="submituserinfo">确定</div>
+            <div id="submituserinfo2">我再想想</div>
+          </div>
+        </div>
+     </div>
+     <!-- 替换月嫂遮罩开始 -->
+        <!-- 时间服务周期控制键盘start -->
+     <div class="timechoosecircleall">
+           <div id="timeTop">
+                <span id="timeClose">取消</span>
+                <span id="timeOk">确定</span>
+            </div>
+           <!--  <div style="height:4rem"></div> -->
+            <div id="timeLeft">
+         <div class="swiper-container swiper-container_monthorday1 swiperdays">
+                    <ul class="swiper-wrapper swiper-wrapperul">
+                        <li class="swiper-slide swiper-slidetype">按天选择</li>
+                        <li class="swiper-slide swiper-slidetype">按月选择</li>
+                        <!-- <li class="swiper-slide">按月选择</li> -->
+                    </ul>
+                </div>
+            </div>
+            <div id="timeRight">
+         <div class="swiper-container swiper-container_monthorday2 swiperdaysdetail">
+                    <ul class="swiper-wrapper swiper-wrapperul" id="swiper-wrappertong">
+                        <li class="swiper-slide" datatype='26'>26天</li>
+                        <li class="swiper-slide" datatype='42'>42天</li>
+                        <li class="swiper-slide" datatype='52'>52天</li>
+                    </ul>
+                </div>
+            </div>
+     </div>
+     <!-- 时间控制键盘 end-->
+         <!-- 预产期控制键盘start -->
+     <div class="timechoosecircleall2">
+           <div id="timeTop2">
+                <span id="timeClose2">取消</span>
+                <span id="timeOk2">确定</span>
+            </div>
+            <!-- <div style="height:4.5rem"></div> -->
+            <div id="timeLeft2">
+         <div class="swiper-container swiper-container_monthordaya1 swiperyear">
+                    <ul class="swiper-wrapper swiper-wrapperleft swiper-wrapperyear">
+                    </ul>
+                </div>
+            </div>
+             <div id="timeMiddle2">
+         <div class="swiper-container swiper-container_monthordaya2 swipermonth">
+                    <ul class="swiper-wrapper swiper-wrappermid swiper-wrappermonth">
+                    </ul>
+                </div>
+            </div>
+            <div id="timeRight2">
+         <div class="swiper-container swiper-container_monthordaya3 swiperdate" id="swiper-container_monthorday">
+                    <ul class="swiper-wrapper swiper-wrapperright swiper-wrapperdate" id="swiper-wrappertong2">
+                    </ul>
+                </div>
+            </div>
+     </div>
+     <!-- 预产期控制插件 end-->
+</body>
+</html>
